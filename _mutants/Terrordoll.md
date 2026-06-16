@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Terrordoll"
-ID: "ba_02"
-permalink: /mutants/Terrordoll/
+mutant_id: "ba_02"
+permalink: /mutants/terrordoll/
 ---

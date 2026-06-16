@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Deadnosaur"
-ID: "db_08"
-permalink: /mutants/Deadnosaur/
+mutant_id: "db_08"
+permalink: /mutants/deadnosaur/
 ---

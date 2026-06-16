@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Starscream"
-ID: "ec_07"
-permalink: /mutants/Starscream/
+mutant_id: "ec_07"
+permalink: /mutants/starscream/
 ---

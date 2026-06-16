@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Unstabot"
-ID: "ab_12"
-permalink: /mutants/Unstabot/
+mutant_id: "ab_12"
+permalink: /mutants/unstabot/
 ---

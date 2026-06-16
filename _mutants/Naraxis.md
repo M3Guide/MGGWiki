@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Naraxis"
-ID: "ba_08"
-permalink: /mutants/Naraxis/
+mutant_id: "ba_08"
+permalink: /mutants/naraxis/
 ---

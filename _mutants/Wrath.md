@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Wrath"
-ID: "cb_08"
-permalink: /mutants/Wrath/
+mutant_id: "cb_08"
+permalink: /mutants/wrath/
 ---

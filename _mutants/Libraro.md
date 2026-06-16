@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Libraro"
-ID: "ae_02"
-permalink: /mutants/Libraro/
+mutant_id: "ae_02"
+permalink: /mutants/libraro/
 ---

@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Yggdrasil"
-ID: "fb_10"
-permalink: /mutants/Yggdrasil/
+mutant_id: "fb_10"
+permalink: /mutants/yggdrasil/
 ---

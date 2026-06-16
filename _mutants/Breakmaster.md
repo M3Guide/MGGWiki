@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Breakmaster"
-ID: "ca_14"
-permalink: /mutants/Breakmaster/
+mutant_id: "ca_14"
+permalink: /mutants/breakmaster/
 ---

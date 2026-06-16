@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Cabloid"
-ID: "aa_12"
-permalink: /mutants/Cabloid/
+mutant_id: "aa_12"
+permalink: /mutants/cabloid/
 ---

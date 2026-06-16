@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Divastator"
-ID: "ef_10"
-permalink: /mutants/Divastator/
+mutant_id: "ef_10"
+permalink: /mutants/divastator/
 ---

@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Slashog"
-ID: "de_03"
-permalink: /mutants/Slashog/
+mutant_id: "de_03"
+permalink: /mutants/slashog/
 ---

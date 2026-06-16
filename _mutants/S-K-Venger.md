@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "S-K-Venger"
-ID: "ab_10"
-permalink: /mutants/S-K-Venger/
+mutant_id: "ab_10"
+permalink: /mutants/s-k-venger/
 ---

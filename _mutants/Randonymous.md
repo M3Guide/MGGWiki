@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Randonymous"
-ID: "ae_99"
-permalink: /mutants/Randonymous/
+mutant_id: "ae_99"
+permalink: /mutants/randonymous/
 ---

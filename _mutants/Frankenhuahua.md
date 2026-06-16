@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Frankenhuahua"
-ID: "bb_09"
-permalink: /mutants/Frankenhuahua/
+mutant_id: "bb_09"
+permalink: /mutants/frankenhuahua/
 ---

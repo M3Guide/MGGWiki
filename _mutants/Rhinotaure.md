@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Rhinotaure"
-ID: "dd_08"
-permalink: /mutants/Rhinotaure/
+mutant_id: "dd_08"
+permalink: /mutants/rhinotaure/
 ---

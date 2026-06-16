@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Chun-Lei"
-ID: "ce_11"
-permalink: /mutants/Chun-Lei/
+mutant_id: "ce_11"
+permalink: /mutants/chun-lei/
 ---

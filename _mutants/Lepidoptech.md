@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Lepidoptech"
-ID: "ad_12"
-permalink: /mutants/Lepidoptech/
+mutant_id: "ad_12"
+permalink: /mutants/lepidoptech/
 ---

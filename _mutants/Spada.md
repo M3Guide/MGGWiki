@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Spada"
-ID: "dc_11"
-permalink: /mutants/Spada/
+mutant_id: "dc_11"
+permalink: /mutants/spada/
 ---

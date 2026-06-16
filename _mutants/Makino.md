@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Makino"
-ID: "ca_08"
-permalink: /mutants/Makino/
+mutant_id: "ca_08"
+permalink: /mutants/makino/
 ---

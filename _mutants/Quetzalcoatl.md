@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Quetzalcoatl"
-ID: "df_09"
-permalink: /mutants/Quetzalcoatl/
+mutant_id: "df_09"
+permalink: /mutants/quetzalcoatl/
 ---

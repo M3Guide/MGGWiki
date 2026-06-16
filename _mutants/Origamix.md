@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Origamix"
-ID: "ad_14"
-permalink: /mutants/Origamix/
+mutant_id: "ad_14"
+permalink: /mutants/origamix/
 ---

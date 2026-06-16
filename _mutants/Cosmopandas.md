@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Cosmopandas"
-ID: "de_08"
-permalink: /mutants/Cosmopandas/
+mutant_id: "de_08"
+permalink: /mutants/cosmopandas/
 ---

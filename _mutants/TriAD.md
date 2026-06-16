@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "TriAD"
-ID: "aa_11"
-permalink: /mutants/TriAD/
+mutant_id: "aa_11"
+permalink: /mutants/triad/
 ---

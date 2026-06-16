@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Omikami"
-ID: "fd_08"
-permalink: /mutants/Omikami/
+mutant_id: "fd_08"
+permalink: /mutants/omikami/
 ---

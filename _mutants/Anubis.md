@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Anubis"
-ID: "fb_03"
-permalink: /mutants/Anubis/
+mutant_id: "fb_03"
+permalink: /mutants/anubis/
 ---

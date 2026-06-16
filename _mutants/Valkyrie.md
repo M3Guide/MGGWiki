@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Valkyrie"
-ID: "cf_01"
-permalink: /mutants/Valkyrie/
+mutant_id: "cf_01"
+permalink: /mutants/valkyrie/
 ---

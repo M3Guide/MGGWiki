@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Sirenia"
-ID: "eb_02"
-permalink: /mutants/Sirenia/
+mutant_id: "eb_02"
+permalink: /mutants/sirenia/
 ---

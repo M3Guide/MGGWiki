@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Pugnisher"
-ID: "da_07"
-permalink: /mutants/Pugnisher/
+mutant_id: "da_07"
+permalink: /mutants/pugnisher/
 ---

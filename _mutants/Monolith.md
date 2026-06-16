@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Monolith"
-ID: "ff_04"
-permalink: /mutants/Monolith/
+mutant_id: "ff_04"
+permalink: /mutants/monolith/
 ---

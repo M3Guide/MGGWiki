@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Cobrakai"
-ID: "db_03"
-permalink: /mutants/Cobrakai/
+mutant_id: "db_03"
+permalink: /mutants/cobrakai/
 ---

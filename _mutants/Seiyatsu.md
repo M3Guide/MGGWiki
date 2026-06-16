@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Seiyatsu"
-ID: "ef_08"
-permalink: /mutants/Seiyatsu/
+mutant_id: "ef_08"
+permalink: /mutants/seiyatsu/
 ---

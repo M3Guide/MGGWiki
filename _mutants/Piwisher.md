@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Piwisher"
-ID: "db_11"
-permalink: /mutants/Piwisher/
+mutant_id: "db_11"
+permalink: /mutants/piwisher/
 ---

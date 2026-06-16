@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Dissension"
-ID: "cb_11"
-permalink: /mutants/Dissension/
+mutant_id: "cb_11"
+permalink: /mutants/dissension/
 ---

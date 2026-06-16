@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Hercules"
-ID: "aa_06"
-permalink: /mutants/Hercules/
+mutant_id: "aa_06"
+permalink: /mutants/hercules/
 ---

@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Ragnar"
-ID: "cb_03"
-permalink: /mutants/Ragnar/
+mutant_id: "cb_03"
+permalink: /mutants/ragnar/
 ---

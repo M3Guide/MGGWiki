@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Waryena"
-ID: "bd_10"
-permalink: /mutants/Waryena/
+mutant_id: "bd_10"
+permalink: /mutants/waryena/
 ---

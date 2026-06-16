@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Namaste"
-ID: "ff_06"
-permalink: /mutants/Namaste/
+mutant_id: "ff_06"
+permalink: /mutants/namaste/
 ---

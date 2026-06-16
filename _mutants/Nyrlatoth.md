@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Nyrlatoth"
-ID: "be_05"
-permalink: /mutants/Nyrlatoth/
+mutant_id: "be_05"
+permalink: /mutants/nyrlatoth/
 ---

@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Firestorm"
-ID: "ff_08"
-permalink: /mutants/Firestorm/
+mutant_id: "ff_08"
+permalink: /mutants/firestorm/
 ---

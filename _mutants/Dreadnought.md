@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Dreadnought"
-ID: "ea_11"
-permalink: /mutants/Dreadnought/
+mutant_id: "ea_11"
+permalink: /mutants/dreadnought/
 ---

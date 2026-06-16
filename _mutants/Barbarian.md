@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Barbarian"
-ID: "c_05"
-permalink: /mutants/Barbarian/
+mutant_id: "c_05"
+permalink: /mutants/barbarian/
 ---

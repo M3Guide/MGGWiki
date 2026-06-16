@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Genshiryoku"
-ID: "de_04"
-permalink: /mutants/Genshiryoku/
+mutant_id: "de_04"
+permalink: /mutants/genshiryoku/
 ---

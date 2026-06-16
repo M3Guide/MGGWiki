@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Thunderstruck"
-ID: "aa_05"
-permalink: /mutants/Thunderstruck/
+mutant_id: "aa_05"
+permalink: /mutants/thunderstruck/
 ---

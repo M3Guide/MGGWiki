@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Zena"
-ID: "cc_03"
-permalink: /mutants/Zena/
+mutant_id: "cc_03"
+permalink: /mutants/zena/
 ---

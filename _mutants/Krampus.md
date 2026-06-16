@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Krampus"
-ID: "dc_10"
-permalink: /mutants/Krampus/
+mutant_id: "dc_10"
+permalink: /mutants/krampus/
 ---

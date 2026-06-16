@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Gozer"
-ID: "fb_08"
-permalink: /mutants/Gozer/
+mutant_id: "fb_08"
+permalink: /mutants/gozer/
 ---

@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Monocerus"
-ID: "ad_02"
-permalink: /mutants/Monocerus/
+mutant_id: "ad_02"
+permalink: /mutants/monocerus/
 ---

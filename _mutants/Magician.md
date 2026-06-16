@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Magician"
-ID: "f_14"
-permalink: /mutants/Magician/
+mutant_id: "f_14"
+permalink: /mutants/magician/
 ---

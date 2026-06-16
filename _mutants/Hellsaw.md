@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Hellsaw"
-ID: "ba_10"
-permalink: /mutants/Hellsaw/
+mutant_id: "ba_10"
+permalink: /mutants/hellsaw/
 ---

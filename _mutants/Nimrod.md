@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Nimrod"
-ID: "fc_99"
-permalink: /mutants/Nimrod/
+mutant_id: "fc_99"
+permalink: /mutants/nimrod/
 ---

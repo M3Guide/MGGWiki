@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Medusa"
-ID: "fd_01"
-permalink: /mutants/Medusa/
+mutant_id: "fd_01"
+permalink: /mutants/medusa/
 ---

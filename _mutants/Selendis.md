@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Selendis"
-ID: "ee_05"
-permalink: /mutants/Selendis/
+mutant_id: "ee_05"
+permalink: /mutants/selendis/
 ---

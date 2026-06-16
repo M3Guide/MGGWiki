@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Ossembly"
-ID: "b_12"
-permalink: /mutants/Ossembly/
+mutant_id: "b_12"
+permalink: /mutants/ossembly/
 ---

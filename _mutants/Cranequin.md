@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Cranequin"
-ID: "cb_12"
-permalink: /mutants/Cranequin/
+mutant_id: "cb_12"
+permalink: /mutants/cranequin/
 ---

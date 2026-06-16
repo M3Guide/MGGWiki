@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Dilophoraptor"
-ID: "dd_05"
-permalink: /mutants/Dilophoraptor/
+mutant_id: "dd_05"
+permalink: /mutants/dilophoraptor/
 ---

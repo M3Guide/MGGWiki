@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Heimdall"
-ID: "af_11"
-permalink: /mutants/Heimdall/
+mutant_id: "af_11"
+permalink: /mutants/heimdall/
 ---

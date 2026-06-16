@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Perfitrouille"
-ID: "bc_14"
-permalink: /mutants/Perfitrouille/
+mutant_id: "bc_14"
+permalink: /mutants/perfitrouille/
 ---

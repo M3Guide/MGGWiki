@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Absolem"
-ID: "df_03"
-permalink: /mutants/Absolem/
+mutant_id: "df_03"
+permalink: /mutants/absolem/
 ---

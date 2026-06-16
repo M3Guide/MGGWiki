@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Andromeda"
-ID: "ae_08"
-permalink: /mutants/Andromeda/
+mutant_id: "ae_08"
+permalink: /mutants/andromeda/
 ---

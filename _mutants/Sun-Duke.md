@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Sun-Duke"
-ID: "ce_05"
-permalink: /mutants/Sun-Duke/
+mutant_id: "ce_05"
+permalink: /mutants/sun-duke/
 ---

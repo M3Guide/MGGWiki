@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Android"
-ID: "aa_01"
-permalink: /mutants/Android/
+mutant_id: "aa_01"
+permalink: /mutants/android/
 ---

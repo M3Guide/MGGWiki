@@ -5,7 +5,6 @@ CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQh2Z4QbBx5VxQgAwXOue
 OUTPUT_DIR = "_mutants"
 
 def slugify(name: str) -> str:
-    name = name.lower().strip()
     name = re.sub(r"[''']", "", name)     
     name = re.sub(r"[^a-z0-9]+", "-", name)
     name = name.strip("-")
@@ -19,7 +18,7 @@ def make_front_matter(row: dict) -> str:
     return f"""---
 layout: mutant
 title: "{safe_name}"
-mutant_id: "{mutant_id}"
+ID: "{mutant_id}"
 permalink: /mutants/{slug}/
 ---
 """

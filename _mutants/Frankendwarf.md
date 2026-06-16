@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Frankendwarf"
-ID: "cb_10"
-permalink: /mutants/Frankendwarf/
+mutant_id: "cb_10"
+permalink: /mutants/frankendwarf/
 ---

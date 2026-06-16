@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Saber"
-ID: "df_06"
-permalink: /mutants/Saber/
+mutant_id: "df_06"
+permalink: /mutants/saber/
 ---

@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Sorceress"
-ID: "fb_06"
-permalink: /mutants/Sorceress/
+mutant_id: "fb_06"
+permalink: /mutants/sorceress/
 ---

@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "CyberSlug"
-ID: "ae_05"
-permalink: /mutants/CyberSlug/
+mutant_id: "ae_05"
+permalink: /mutants/cyberslug/
 ---

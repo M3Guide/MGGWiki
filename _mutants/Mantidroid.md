@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Mantidroid"
-ID: "da_03"
-permalink: /mutants/Mantidroid/
+mutant_id: "da_03"
+permalink: /mutants/mantidroid/
 ---

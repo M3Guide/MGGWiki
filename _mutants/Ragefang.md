@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Ragefang"
-ID: "bc_11"
-permalink: /mutants/Ragefang/
+mutant_id: "bc_11"
+permalink: /mutants/ragefang/
 ---

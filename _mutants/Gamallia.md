@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Gamallia"
-ID: "ec_10"
-permalink: /mutants/Gamallia/
+mutant_id: "ec_10"
+permalink: /mutants/gamallia/
 ---

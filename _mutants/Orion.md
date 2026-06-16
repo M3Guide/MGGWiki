@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Orion"
-ID: "fa_11"
-permalink: /mutants/Orion/
+mutant_id: "fa_11"
+permalink: /mutants/orion/
 ---

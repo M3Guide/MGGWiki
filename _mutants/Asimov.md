@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Asimov"
-ID: "a_13"
-permalink: /mutants/Asimov/
+mutant_id: "a_13"
+permalink: /mutants/asimov/
 ---

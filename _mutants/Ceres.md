@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Ceres"
-ID: "e_03"
-permalink: /mutants/Ceres/
+mutant_id: "e_03"
+permalink: /mutants/ceres/
 ---

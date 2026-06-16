@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Candlelight"
-ID: "fb_13"
-permalink: /mutants/Candlelight/
+mutant_id: "fb_13"
+permalink: /mutants/candlelight/
 ---

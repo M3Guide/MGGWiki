@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Giganto-Moai"
-ID: "ae_14"
-permalink: /mutants/Giganto-Moai/
+mutant_id: "ae_14"
+permalink: /mutants/giganto-moai/
 ---

@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Zeus"
-ID: "ec_06"
-permalink: /mutants/Zeus/
+mutant_id: "ec_06"
+permalink: /mutants/zeus/
 ---

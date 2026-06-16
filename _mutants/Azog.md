@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Azog"
-ID: "cf_04"
-permalink: /mutants/Azog/
+mutant_id: "cf_04"
+permalink: /mutants/azog/
 ---

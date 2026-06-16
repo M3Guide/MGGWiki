@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Nezarim"
-ID: "be_07"
-permalink: /mutants/Nezarim/
+mutant_id: "be_07"
+permalink: /mutants/nezarim/
 ---

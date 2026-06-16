@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Britany"
-ID: "bf_05"
-permalink: /mutants/Britany/
+mutant_id: "bf_05"
+permalink: /mutants/britany/
 ---

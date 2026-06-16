@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Santagonist"
-ID: "cc_11"
-permalink: /mutants/Santagonist/
+mutant_id: "cc_11"
+permalink: /mutants/santagonist/
 ---

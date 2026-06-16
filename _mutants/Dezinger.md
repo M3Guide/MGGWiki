@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Dezinger"
-ID: "ac_03"
-permalink: /mutants/Dezinger/
+mutant_id: "ac_03"
+permalink: /mutants/dezinger/
 ---

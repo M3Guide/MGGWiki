@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Calaca"
-ID: "bf_09"
-permalink: /mutants/Calaca/
+mutant_id: "bf_09"
+permalink: /mutants/calaca/
 ---

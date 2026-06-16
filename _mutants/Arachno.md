@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Arachno"
-ID: "da_02"
-permalink: /mutants/Arachno/
+mutant_id: "da_02"
+permalink: /mutants/arachno/
 ---

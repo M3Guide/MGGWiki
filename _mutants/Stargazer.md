@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Stargazer"
-ID: "e_13"
-permalink: /mutants/Stargazer/
+mutant_id: "e_13"
+permalink: /mutants/stargazer/
 ---

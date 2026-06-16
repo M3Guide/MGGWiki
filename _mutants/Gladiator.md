@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Gladiator"
-ID: "c_14"
-permalink: /mutants/Gladiator/
+mutant_id: "c_14"
+permalink: /mutants/gladiator/
 ---

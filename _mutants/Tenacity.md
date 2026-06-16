@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Tenacity"
-ID: "ae_12"
-permalink: /mutants/Tenacity/
+mutant_id: "ae_12"
+permalink: /mutants/tenacity/
 ---

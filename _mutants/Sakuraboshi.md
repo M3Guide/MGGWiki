@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Sakuraboshi"
-ID: "ff_13"
-permalink: /mutants/Sakuraboshi/
+mutant_id: "ff_13"
+permalink: /mutants/sakuraboshi/
 ---

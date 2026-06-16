@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Spectre"
-ID: "ec_08"
-permalink: /mutants/Spectre/
+mutant_id: "ec_08"
+permalink: /mutants/spectre/
 ---

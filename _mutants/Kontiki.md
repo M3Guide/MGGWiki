@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Kontiki"
-ID: "df_04"
-permalink: /mutants/Kontiki/
+mutant_id: "df_04"
+permalink: /mutants/kontiki/
 ---

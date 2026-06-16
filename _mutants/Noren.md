@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Noren"
-ID: "dc_07"
-permalink: /mutants/Noren/
+mutant_id: "dc_07"
+permalink: /mutants/noren/
 ---

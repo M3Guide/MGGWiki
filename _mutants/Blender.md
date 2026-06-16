@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Blender"
-ID: "ac_08"
-permalink: /mutants/Blender/
+mutant_id: "ac_08"
+permalink: /mutants/blender/
 ---

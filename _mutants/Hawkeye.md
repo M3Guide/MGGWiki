@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Hawkeye"
-ID: "da_10"
-permalink: /mutants/Hawkeye/
+mutant_id: "da_10"
+permalink: /mutants/hawkeye/
 ---

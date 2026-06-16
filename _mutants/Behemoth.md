@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Behemoth"
-ID: "ec_02"
-permalink: /mutants/Behemoth/
+mutant_id: "ec_02"
+permalink: /mutants/behemoth/
 ---

@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Invadron"
-ID: "ae_03"
-permalink: /mutants/Invadron/
+mutant_id: "ae_03"
+permalink: /mutants/invadron/
 ---

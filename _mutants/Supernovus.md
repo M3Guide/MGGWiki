@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Supernovus"
-ID: "ee_02"
-permalink: /mutants/Supernovus/
+mutant_id: "ee_02"
+permalink: /mutants/supernovus/
 ---

@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Santactopus"
-ID: "ec_04"
-permalink: /mutants/Santactopus/
+mutant_id: "ec_04"
+permalink: /mutants/santactopus/
 ---

@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Automaton"
-ID: "a_14"
-permalink: /mutants/Automaton/
+mutant_id: "a_14"
+permalink: /mutants/automaton/
 ---

@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Baloonies"
-ID: "dd_07"
-permalink: /mutants/Baloonies/
+mutant_id: "dd_07"
+permalink: /mutants/baloonies/
 ---

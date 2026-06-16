@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Sagittaurius"
-ID: "cd_02"
-permalink: /mutants/Sagittaurius/
+mutant_id: "cd_02"
+permalink: /mutants/sagittaurius/
 ---

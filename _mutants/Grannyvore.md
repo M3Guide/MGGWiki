@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Grannyvore"
-ID: "dc_06"
-permalink: /mutants/Grannyvore/
+mutant_id: "dc_06"
+permalink: /mutants/grannyvore/
 ---

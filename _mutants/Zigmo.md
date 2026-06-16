@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Zigmo"
-ID: "de_09"
-permalink: /mutants/Zigmo/
+mutant_id: "de_09"
+permalink: /mutants/zigmo/
 ---

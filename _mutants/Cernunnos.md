@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Cernunnos"
-ID: "dd_04"
-permalink: /mutants/Cernunnos/
+mutant_id: "dd_04"
+permalink: /mutants/cernunnos/
 ---

@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Lichlock"
-ID: "bf_02"
-permalink: /mutants/Lichlock/
+mutant_id: "bf_02"
+permalink: /mutants/lichlock/
 ---

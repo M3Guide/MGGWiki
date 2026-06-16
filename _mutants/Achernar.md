@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Achernar"
-ID: "ef_13"
-permalink: /mutants/Achernar/
+mutant_id: "ef_13"
+permalink: /mutants/achernar/
 ---

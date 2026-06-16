@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Brawler"
-ID: "db_05"
-permalink: /mutants/Brawler/
+mutant_id: "db_05"
+permalink: /mutants/brawler/
 ---

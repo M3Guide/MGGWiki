@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Rakshasa"
-ID: "dc_01"
-permalink: /mutants/Rakshasa/
+mutant_id: "dc_01"
+permalink: /mutants/rakshasa/
 ---

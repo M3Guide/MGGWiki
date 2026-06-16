@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Cancernia"
-ID: "bd_02"
-permalink: /mutants/Cancernia/
+mutant_id: "bd_02"
+permalink: /mutants/cancernia/
 ---

@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Sawmetrodon"
-ID: "dc_13"
-permalink: /mutants/Sawmetrodon/
+mutant_id: "dc_13"
+permalink: /mutants/sawmetrodon/
 ---

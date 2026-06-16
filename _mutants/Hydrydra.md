@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Hydrydra"
-ID: "ed_14"
-permalink: /mutants/Hydrydra/
+mutant_id: "ed_14"
+permalink: /mutants/hydrydra/
 ---

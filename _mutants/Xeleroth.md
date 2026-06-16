@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Xeleroth"
-ID: "fe_09"
-permalink: /mutants/Xeleroth/
+mutant_id: "fe_09"
+permalink: /mutants/xeleroth/
 ---

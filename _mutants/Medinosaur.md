@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Medinosaur"
-ID: "ed_13"
-permalink: /mutants/Medinosaur/
+mutant_id: "ed_13"
+permalink: /mutants/medinosaur/
 ---

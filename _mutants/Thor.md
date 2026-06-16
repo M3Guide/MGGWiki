@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Thor"
-ID: "cf_02"
-permalink: /mutants/Thor/
+mutant_id: "cf_02"
+permalink: /mutants/thor/
 ---
