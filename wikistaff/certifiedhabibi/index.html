@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CertifiedHabibi | Wiki Staff | MGGWiki</title>
+  <link rel="icon" href="/MGGWiki/favicon.ico" type="image/ico">
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="/MGGWiki/assets/css/navbar.css">
+  <script src="/MGGWiki/assets/js/navbar.js" defer></script>
+  <link rel="stylesheet" href="/MGGWiki/assets/css/wiki.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    .staff-profile-page {
+      max-width: 1000px;
+      margin: 48px auto;
+      padding: 0 24px 80px;
+    }
+
+    /* ── Back link ── */
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #bbb;
+      text-decoration: none;
+      margin-bottom: 32px;
+      transition: color 0.15s;
+    }
+    .back-link:hover { color: #b0ea20; text-decoration: none; }
+    .back-link svg { flex-shrink: 0; }
+
+    /* ── Profile header ── */
+    .profile-header {
+      display: flex;
+      gap: 32px;
+      align-items: flex-start;
+      margin-bottom: 40px;
+      padding-bottom: 36px;
+      border-bottom: 1px solid #1e1e24;
+    }
+
+    .profile-portrait {
+      flex-shrink: 0;
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      border: 2px solid #b0ea20;
+      overflow: hidden;
+      background: #111114;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .profile-portrait img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .profile-portrait-initials {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: #b0ea20;
+    }
+
+    .profile-meta { flex: 1; }
+
+    .profile-eyebrow {
+      font-size: 0.62rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #b0ea20;
+      margin-bottom: 4px;
+    }
+    .profile-name {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: #ddd;
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+    .profile-role {
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #aaa;
+      margin-bottom: 16px;
+    }
+
+    /* Optional badge (Image Provider etc.) */
+    .profile-badge {
+      display: inline-block;
+      font-size: 0.6rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      background: rgba(176,234,32,0.08);
+      border: 1px solid rgba(176,234,32,0.25);
+      color: #b0ea20;
+      padding: 2px 8px;
+      border-radius: 2px;
+      margin-bottom: 16px;
+    }
+
+    /* Quote */
+    .profile-quote {
+      font-size: 0.85rem;
+      color: #3d3d48;
+      font-style: italic;
+      border-left: 2px solid #222;
+      padding-left: 12px;
+      margin-bottom: 18px;
+      line-height: 1.7;
+    }
+
+    /* Socials row */
+    .profile-socials {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .social-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 12px;
+      background: #111114;
+      border: 1px solid #222;
+      border-radius: 2px;
+      font-size: 0.75rem;
+      color: #888;
+      text-decoration: none;
+      transition: border-color 0.15s, color 0.15s;
+      font-family: 'Oxanium', sans-serif;
+    }
+    .social-chip:hover { border-color: #b0ea20; color: #eee; text-decoration: none; }
+    .social-chip svg { flex-shrink: 0; }
+
+    /* ── Bio section ── */
+    .profile-bio {
+      background: #111114;
+      border-left: 3px solid #b0ea20;
+      padding: 18px 22px;
+      margin-bottom: 40px;
+      font-size: 0.88rem;
+      color: #bbb;
+      line-height: 1.8;
+    }
+    .profile-bio p + p { margin-top: 10px; }
+
+    /* ── Section label ── */
+    .section-label {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+    .section-label-text {
+      font-size: 0.62rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #bbb;
+      white-space: nowrap;
+    }
+    .section-label-line {
+      flex: 1;
+      height: 1px;
+      background: #1e1e24;
+    }
+
+    /* ── Contributions grid ── */
+    .contributions-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      gap: 10px;
+    }
+    .contrib-card {
+      background: #111114;
+      border: 1px solid #1e1e24;
+      border-top: 2px solid #1e1e24;
+      border-radius: 2px;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      overflow: visible;
+      transition: border-color 0.15s, transform 0.15s;
+    }
+    .contrib-card:hover {
+      border-color: #b0ea20;
+      border-top-color: #b0ea20;
+      transform: translateY(-2px);
+      text-decoration: none;
+    }
+    .contrib-img-wrap {
+      width: 100%;
+      aspect-ratio: 1;
+      background: #0d0d10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+    .contrib-bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+    .contrib-img {
+      width: 82%;
+      height: 82%;
+      object-fit: contain;
+      position: relative;
+      z-index: 1;
+    }
+    .contrib-name {
+      padding: 5px 6px 6px;
+      font-size: 0.68rem;
+      font-weight: 600;
+      color: #888;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      letter-spacing: 0.03em;
+      border-top: 1px solid #1e1e24;
+      font-family: 'Oxanium', sans-serif;
+    }
+    .contrib-card:hover .contrib-name { color: #eee; }
+
+    .no-contributions {
+      color: #333;
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 32px 0;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 560px) {
+      .profile-header { flex-direction: column; align-items: center; text-align: center; }
+      .profile-quote { text-align: left; }
+      .profile-socials { justify-content: center; }
+      .profile-name { font-size: 1.7rem; }
+    }
+  </style>
+
+  <script>
+    /* Front matter values passed to JS */
+    const STAFF_CONTRIBUTOR_COLUMN = "Wiki Author";
+    const STAFF_USERNAME           = "CertifiedHabibi";
+    const STAFF_MUTANT_ID          = "";
+    const CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQh2Z4QbBx5VxQgAwXOueCe3TKK9abQQ-XWVyf5tCGKg3pIxnjhJO6buOVhOO8pCuzYmwvr5dppYTgn/pub?output=csv";
+
+    const geneIcons = { Cyber:"a", Necro:"b", Saber:"c", Zoomorph:"d", Galactic:"e", Mythic:"f", Neutral:"all" };
+
+    function parseCSV(text) {
+      const rows = []; let cur = [], field = "", inQ = false;
+      for (let i = 0; i < text.length; i++) {
+        const c = text[i], n = text[i+1];
+        if (c==='"' && inQ && n==='"') { field+='"'; i++; }
+        else if (c==='"') { inQ=!inQ; }
+        else if (c===',' && !inQ) { cur.push(field); field=""; }
+        else if ((c==='\n'||c==='\r') && !inQ) {
+          if (field.length||cur.length) { cur.push(field); rows.push(cur); cur=[]; field=""; }
+        } else field+=c;
+      }
+      if (field.length||cur.length) { cur.push(field); rows.push(cur); }
+      return rows;
+    }
+
+    document.addEventListener("DOMContentLoaded", async () => {
+      const grid = document.getElementById("contributions-grid");
+      const count = document.getElementById("contrib-count");
+      if (!grid) return;
+
+      /* If no contributor_column is set in front matter, skip */
+      if (!STAFF_CONTRIBUTOR_COLUMN || STAFF_CONTRIBUTOR_COLUMN === "") {
+        grid.innerHTML = `<p class="no-contributions">No contributions tracked yet.</p>`;
+        return;
+      }
+
+      try {
+        const res  = await fetch(CSV_URL);
+        const text = await res.text();
+        const rows = parseCSV(text.trim());
+        const headers = rows[0].map(h => h.trim());
+        const all = rows.slice(1)
+          .map(r => Object.fromEntries(headers.map((h,i) => [h, (r[i]||"").trim()])))
+          .filter(m => m["Name"]);
+
+        /* Match rows where the contributor column contains this staff member's username */
+        const contributed = all.filter(m => {
+          const cell = (m[STAFF_CONTRIBUTOR_COLUMN] || "").toLowerCase();
+          return cell.includes(STAFF_USERNAME.toLowerCase());
+        });
+
+        if (count) count.textContent = contributed.length
+          ? `${contributed.length} page${contributed.length !== 1 ? "s" : ""}`
+          : "";
+
+        if (!contributed.length) {
+          grid.innerHTML = `<p class="no-contributions">No contributions tracked yet.</p>`;
+          return;
+        }
+
+        grid.innerHTML = contributed.map(m => {
+          const id   = (m["ID"]     || "").trim();
+          const name = (m["Name"]   || "").trim();
+          const g1   = (m["Gene 1"] || "").trim();
+          const link = (m["Links"]  || "").trim();
+          const iconSrc = `https://raw.githubusercontent.com/M3Guide/MGGImages/refs/heads/main/icons/${g1}/${id}.png`;
+          return `<a class="contrib-card" href="/mutants/${link}/">
+            <div class="contrib-img-wrap">
+              <img class="contrib-bg" src="/MGGWiki/images/icon_bg.png" alt="">
+              <img class="contrib-img" src="${iconSrc}" alt="${name}" loading="lazy"
+                   onerror="this.src='/MGGWiki/images/placeholder.png'">
+            </div>
+            <div class="contrib-name">${name}</div>
+          </a>`;
+        }).join("");
+
+      } catch(e) {
+        grid.innerHTML = `<p class="no-contributions">Failed to load contributions.</p>`;
+      }
+    });
+  </script>
+</head>
+<body>
+  <header id="navbar-container"></header>
+
+  <div class="staff-profile-page">
+
+    <!-- Back link -->
+    <a class="back-link" href="/MGGWiki/wiki-staff/">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <polyline points="15 18 9 12 15 6"/>
+      </svg>
+      Wiki Staff
+    </a>
+
+    <!-- Profile header -->
+    <div class="profile-header">
+
+      <!-- Portrait -->
+      <div class="profile-portrait">
+        
+          <img src="https://raw.githubusercontent.com/M3Guide/M3Guide.github.io/refs/heads/main/images/sitedevs/Habibi.webp" alt="CertifiedHabibi"
+               onerror="this.style.display='none';document.getElementById('portrait-initial').style.display='flex'">
+        
+        <span class="profile-portrait-initials" id="portrait-initial"
+              style="display:none">
+          C
+        </span>
+      </div>
+
+      <!-- Meta -->
+      <div class="profile-meta">
+        <div class="profile-eyebrow">Wiki Staff</div>
+        <div class="profile-name">CertifiedHabibi</div>
+        <div class="profile-role">Wiki Lead</div>
+        <div class="profile-badge">Founder</div>
+        
+
+        <!-- Socials -->
+        <div class="profile-socials">
+
+          <!-- Discord — always shown -->
+          
+          <span class="social-chip">
+            <i class="fab fa-discord"></i>
+            certified._.habibi
+          </span>
+          
+
+          <!-- Email (optional) -->
+          
+          <a class="social-chip" href="mailto:fxswift2610@gmail.com">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/>
+            </svg>
+            fxswift2610@gmail.com
+          </a>
+          
+
+          <!-- YouTube (optional) -->
+          
+
+          <!-- GitHub (optional) -->
+          
+          <a class="social-chip" href="https://github.com/CertifiedHabibi" target="_blank" rel="noopener">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.08-.73.08-.73 1.2.09 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.9 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.82.58A12 12 0 0 0 24 12C24 5.37 18.63 0 12 0z"/>
+            </svg>
+            CertifiedHabibi
+          </a>
+          
+
+          <!-- Twitter / X (optional) -->
+          
+          <a class="social-chip" href="https://twitter.com/Habibi'sTwitter" target="_blank" rel="noopener">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.259 5.632 5.905-5.632zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+            @Habibi'sTwitter
+          </a>
+          
+
+          <!-- Custom link (optional) -->
+          
+          <a class="social-chip" href="https://HabibiLink.github.io" target="_blank" rel="noopener">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+              <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+            </svg>
+            HabibiLink
+          </a>
+          
+
+        </div><!-- /profile-socials -->
+      </div><!-- /profile-meta -->
+    </div><!-- /profile-header -->
+
+    <!-- Bio (from .md body content) -->
+    
+    <div class="section-label">
+      <span class="section-label-text">About</span>
+      <span class="section-label-line"></span>
+    </div>
+    <div class="profile-bio">
+      <!-- Bio goes here. This is optional — delete everything below the --- if you want no bio. -->
+<p>You can place any bio you want here Habibi.</p>
+
+    </div>
+    
+
+    <!-- Contributions -->
+    <div class="section-label">
+      <span class="section-label-text">Contributions</span>
+      <span class="section-label-line"></span>
+      <span id="contrib-count" style="font-size:0.62rem;letter-spacing:0.12em;color:#333;text-transform:uppercase;white-space:nowrap;"></span>
+    </div>
+    <div class="contributions-grid" id="contributions-grid">
+      <p class="no-contributions">Loading...</p>
+    </div>
+
+  </div><!-- /staff-profile-page -->
+</body>
+</html>

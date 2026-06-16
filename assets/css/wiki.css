@@ -1,0 +1,614 @@
+body {
+  color: #eee;
+  font-family: 'Oxanium', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: linear-gradient(rgba(31, 31, 31, 0.9), rgba(31, 31, 31, 0.9)),
+                        url('https://s-ak.kobojo.com/mutants/assets/mobile/maps/bkg0.webp') center/cover;
+  background-attachment: fixed;
+}
+a {
+  color: #b0ea20;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Layout */
+.wiki-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+/* Left content */
+.wiki-content {
+  flex: 3;
+  background: #222;
+  padding: 25px 30px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+.mutant-title {
+  font-size: 2.3rem;
+  color: white;
+  border-bottom: 2px solid #333;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+
+/* Biography */
+.bio-box {
+  background: #2b2b2f;
+  border-left: 4px solid #b0ea20;
+  padding: 15px 20px;
+  margin: 20px 0;
+  color: white;
+  text-align: justify;
+}
+#mutant-biography {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Stats */
+#mutant-stats-box {
+  margin: auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 13px 16px 16px;
+  gap: 6px;
+  color: white;
+  background: #2b2b2f;
+  border-radius: 5px;
+}
+.stat-box {
+  display: flex;
+  align-items: center;
+  background-color: rgba(58, 58, 74, 0.5);
+  border-radius: 6px;
+  padding: 6px 10px;
+  flex: 1;
+  overflow: hidden;
+}
+.stat-box.attack {
+  justify-content: flex-start;
+  flex: 2;
+  border-left: none;
+  position: relative;
+  padding: 10px 14px;
+  transition: background 0.3s;
+}
+.stat-box.attack[data-gene="Cyber"] { box-shadow: inset 0 0 0 3px #b16b00; }
+.stat-box.attack[data-gene="Necro"] { box-shadow: inset 0 0 0 3px #81930d; }
+.stat-box.attack[data-gene="Saber"] { box-shadow: inset 0 0 0 3px #992e12; }
+.stat-box.attack[data-gene="Zoomorph"] { box-shadow: inset 0 0 0 3px #653d1d; }
+.stat-box.attack[data-gene="Galactic"] { box-shadow: inset 0 0 0 3px #374374; }
+.stat-box.attack[data-gene="Mythic"] { box-shadow: inset 0 0 0 3px #482c58; }
+.stat-box.attack[data-gene="Neutral"] { box-shadow: inset 0 0 0 3px #185a5c; }
+.stat-box.small {
+  flex: 1;
+  clip-path: polygon(
+    8% 0%, 92% 0%, 100% 20%, 92% 100%, 8% 100%, 0% 80%
+  );
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+}
+.stat-row {
+  display: flex;
+  gap: 6px;
+}
+.stat-icon {
+  width: 28px;
+  height: 28px;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+.stat-value {
+  font-size: 1rem;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.stat-text {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.stat-attack {
+  font-size: 1rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.stat-gene-stack {
+  position: relative;
+  width: 45px;
+  height: 59.016px;
+  margin-right: 16px;
+}
+.stat-gene-spread {
+  width: 19.883px;
+  height: 45px;
+  flex-shrink: 0;
+  margin-right: 8px;
+  object-fit: contain;
+  position: absolute;
+  bottom: 14.5px;
+  transform: translateX(-50%);
+  left: 30px;
+  display: none;
+}
+.stat-gene-img {
+  width: 35.5px;
+  height: 45px;
+  flex-shrink: 0;
+  margin-right: 8px;
+  object-fit: contain;
+  position: absolute;
+  bottom: 0;
+  top: 3px;
+  transform: translateX(-50%);
+  left: 16px;
+}
+.stat-gene-plus {
+  height: 45px;
+  width: 59.016px;
+  object-fit: contain;
+  margin-right: 8px;
+  display: none;
+}
+#stat-ability-img{
+  width: 100%;
+  height: 100%;
+  margin-right: 8px;
+  flex-shrink: 0;
+  object-fit: contain;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  top: -0.5px;
+  transform: translateX(-50%);
+}
+#stat-ability-stack {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  margin-right: 16px;
+}
+#stat-ability-plus {
+  height: 28px;
+  width: auto;
+  object-fit: contain;
+  display: none;
+  margin-right: 8px;
+}
+/* Versions Section */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+.version {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.version img {
+  width: 110px;
+  border: 1px solid #444;
+  transition: 0.2s;
+}
+.version img:hover {
+  transform: scale(1.05);
+  border-color: #b0ea20;
+}
+.version-label {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+@media (max-width: 768px){
+  .wiki-layout {
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .infobox {
+    order: -1;
+    max-width: 300px;
+    width: 300px;
+    margin: 0 auto;
+  }
+  .wiki-content {
+    order: 0;
+    max-width: 100%;
+  }
+}
+
+.mutant-name-box {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: white;
+}
+
+/* Infobox */
+.infobox {
+  flex: 1;
+  background: #2b2b2f;
+  border: 1px solid #444;
+  padding: 10px;
+  max-width: 300px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  color: #ddd;
+  border-radius: 5px;
+}
+.infobox-header {
+  text-align: center;
+  border-bottom: 1px solid #333;
+  margin-bottom: 10px;
+}
+.infobox-header img {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.infobox-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.infobox-table th {
+  background: #222;
+  color: white;
+  border: 1px solid #333;
+  padding: 6px;
+  width: 40%;
+  text-align: left;
+}
+.infobox-table td {
+  border: 1px solid #333;
+  padding: 6px;
+}
+.infobox-table td:nth-child(2){
+  text-align: center
+}
+/* Gene Icons */
+.gene-icon {
+  width: 35.5px;
+  height: 45px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.category-icon {
+  width: 45px;
+  height: 45px;
+  vertical-align: middle;
+}
+#mutant-image-container {
+  width: 300px;           
+  height: 500px;      
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  background-position: center;
+  background-image: url('../../images/category/Common_BG.png');
+}
+#mutant-image {
+  width: 95%;
+  height: 95%;
+  object-fit: contain;
+  object-position: center;
+}
+
+/*Mutant Image Selector for Infobox*/
+
+.skin-selector button.active {
+  color: #b0ea20;
+}
+.skin-selector button.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #b0ea20;
+}
+.skin-selector button:hover {
+  color: #ffffff;
+}
+#skin-selector-wrapper {
+  position: relative;
+  background: #231f26;
+  overflow: hidden;
+}
+#mutant-skin-selector {
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+#mutant-skin-selector::-webkit-scrollbar {
+  display: none;
+}
+#mutant-skin-selector button {
+  flex: none;
+  background: none;
+  border: none;
+  color: #bdbdbd;
+  font-weight: 600;
+  padding: 7px 10px;
+  cursor: pointer;
+  position: relative;
+  white-space: nowrap;
+  font-family: 'Oxanium', sans-serif;
+}
+#mutant-skin-selector button.active {
+  color: #b0ea20;
+}
+#mutant-skin-selector button.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #b0ea20;
+}
+#mutant-skin-selector button:hover {
+  color: #b0ea20;
+}
+#skin-left,
+#skin-right {
+  position: absolute;
+  top: 43.5%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10;
+  width: 25px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s;
+}
+#skin-left {
+  left: -5px;
+  height: 120%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent);
+}
+#skin-right {
+  right: -5px;
+  height: 120%;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.4), transparent);
+}
+
+/*Toggle for Upgraded Stats*/
+#stats-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+#stats-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+
+#stats-toggle span {
+  color: #888;
+  transition: color 0.3s;
+}
+
+#stats-toggle span.active {
+  color: #b0ea20;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 24px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #555;
+  transition: .3s;
+  border-radius: 24px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .3s;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: #b0ea20;
+}
+input:checked + .slider:before {
+  transform: translateX(22px);
+}
+/* Google Translate */
+#google_translate_element {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 9999;
+  background: #2b2b2f;
+  border: 1px solid #444;
+  border-radius: 5px;
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.goog-te-gadget {
+  color: #b0ea20 !important;
+  font-family: 'Oxanium', sans-serif !important;
+}
+
+.goog-te-gadget-simple {
+  background-color: #222 !important;
+  border: 1px solid #555 !important;
+  border-radius: 4px !important;
+  padding: 4px 8px !important;
+  color: #eee !important;
+}
+
+.goog-te-gadget-simple:hover {
+  background-color: #333 !important;
+  border-color: #b0ea20 !important;
+}
+
+.goog-te-menu-value span {
+  color: #b0ea20 !important;
+}
+
+.goog-logo-link {
+  display: none !important;
+}
+.goog-te-gadget span {
+  display: none !important;
+}
+
+.obtain-box {
+  background: #2b2b2f;
+  border-left: 4px solid #20c4ea;
+  padding: 15px 20px;
+  margin: 20px 0;
+  color: white;
+  text-align: justify;
+}
+#mutant-obtain {
+  white-space: pre-wrap;
+}
+ 
+/* References box */
+.references-box {
+  background: #2b2b2f;
+  border-left: 4px solid #888;
+  padding: 15px 20px;
+  margin: 20px 0;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+ 
+/* ── Rich-text inline links ────────────────────────────────── */
+ 
+/* The <a> tag wrapping linked terms */
+a.rich-link {
+  color: #b0ea20;
+  text-decoration: none;
+  display: inline;
+  white-space: normal;
+}
+a.rich-link:hover {
+  text-decoration: underline;
+  color: #d4ff4a;
+}
+ 
+/* Shared base for all inline icons */
+.rich-icon {
+  display: inline-block;
+  vertical-align: text-bottom;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+ 
+/* Gene icons — tall and narrow like the gene_*.png assets */
+.rich-icon--gene {
+  width: 14px;
+  height: 18px;
+}
+ 
+/* Category icons — square badge */
+.rich-icon--category {
+  width: 18px;
+  height: 18px;
+}
+ 
+/* Ability icons — square badge */
+.rich-icon--ability {
+  width: 18px;
+  height: 18px;
+}
+
+/* Supplies icons — square badge */
+.rich-icon--supplies {
+  width: 20px;
+  height: 20px;
+}
+
+/* Bullet points for obtain & references sections */
+#mutant-obtain,
+#mutant-references {
+  white-space: pre-wrap;
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.obtain-bullet,
+.ref-bullet {
+  display: block;
+  padding-left: 1em;
+  text-indent: -1em;
+  margin-bottom: 6px;
+  line-height: 1.6;
+  word-break: break-word;
+}
+
+.obtain-bullet::before,
+.ref-bullet::before {
+  content: "• ";
+}
+
+/* Make gene/category/ability icons in infobox clickable */
+.gene-icon-link,
+.category-icon-link,
+.ability-icon-link {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.gene-icon-link:hover .gene-icon,
+.category-icon-link:hover .category-icon,
+.ability-icon-link:hover .category-icon {
+  filter: brightness(1.3) drop-shadow(0 0 4px #b0ea20);
+  transition: filter 0.2s;
+}
