@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Crypt Wraith"
-mutant_id: "bb_02"
-permalink: /mutants/crypt-wraith/
+ID: "bb_02"
+permalink: /mutants/Crypt-Wraith/
 ---

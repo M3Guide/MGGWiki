@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Sentry"
-mutant_id: "ea_02"
-permalink: /mutants/sentry/
+ID: "ea_02"
+permalink: /mutants/Sentry/
 ---

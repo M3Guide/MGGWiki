@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Captain Eagle"
-mutant_id: "cd_12"
-permalink: /mutants/captain-eagle/
+ID: "cd_12"
+permalink: /mutants/Captain-Eagle/
 ---

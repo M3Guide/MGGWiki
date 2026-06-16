@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Rammerhead"
-mutant_id: "bf_03"
-permalink: /mutants/rammerhead/
+ID: "bf_03"
+permalink: /mutants/Rammerhead/
 ---

@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Enforcer"
-mutant_id: "ca_01"
-permalink: /mutants/enforcer/
+ID: "ca_01"
+permalink: /mutants/Enforcer/
 ---

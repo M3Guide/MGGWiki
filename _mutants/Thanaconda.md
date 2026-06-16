@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Thanaconda"
-mutant_id: "bd_12"
-permalink: /mutants/thanaconda/
+ID: "bd_12"
+permalink: /mutants/Thanaconda/
 ---

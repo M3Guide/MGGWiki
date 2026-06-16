@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Captain Wrenchfury"
-mutant_id: "ac_02"
-permalink: /mutants/captain-wrenchfury/
+ID: "ac_02"
+permalink: /mutants/Captain-Wrenchfury/
 ---

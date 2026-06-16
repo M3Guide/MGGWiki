@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Dracus Nobilis"
-mutant_id: "df_01"
-permalink: /mutants/dracus-nobilis/
+ID: "df_01"
+permalink: /mutants/Dracus-Nobilis/
 ---

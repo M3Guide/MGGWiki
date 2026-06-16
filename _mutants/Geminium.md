@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Geminium"
-mutant_id: "ce_02"
-permalink: /mutants/geminium/
+ID: "ce_02"
+permalink: /mutants/Geminium/
 ---

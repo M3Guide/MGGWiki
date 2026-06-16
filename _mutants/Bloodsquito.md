@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Bloodsquito"
-mutant_id: "bd_13"
-permalink: /mutants/bloodsquito/
+ID: "bd_13"
+permalink: /mutants/Bloodsquito/
 ---

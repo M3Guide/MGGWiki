@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Captain Bag 'O' Bones"
-mutant_id: "bc_02"
-permalink: /mutants/captain-bag-o-bones/
+ID: "bc_02"
+permalink: /mutants/Captain-Bag-O-Bones/
 ---

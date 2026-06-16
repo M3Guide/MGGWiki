@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "The Devourer"
-mutant_id: "eb_03"
-permalink: /mutants/the-devourer/
+ID: "eb_03"
+permalink: /mutants/The-Devourer/
 ---

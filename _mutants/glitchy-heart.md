@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Glitchy Heart"
-mutant_id: "ab_15"
-permalink: /mutants/glitchy-heart/
+ID: "ab_15"
+permalink: /mutants/Glitchy-Heart/
 ---

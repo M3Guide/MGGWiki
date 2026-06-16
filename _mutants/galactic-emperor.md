@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Galactic Emperor"
-mutant_id: "bf_04"
-permalink: /mutants/galactic-emperor/
+ID: "bf_04"
+permalink: /mutants/Galactic-Emperor/
 ---

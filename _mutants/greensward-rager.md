@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Greensward Rager"
-mutant_id: "bd_14"
-permalink: /mutants/greensward-rager/
+ID: "bd_14"
+permalink: /mutants/Greensward-Rager/
 ---

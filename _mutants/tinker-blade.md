@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Tinker Blade"
-mutant_id: "cf_03"
-permalink: /mutants/tinker-blade/
+ID: "cf_03"
+permalink: /mutants/Tinker-Blade/
 ---

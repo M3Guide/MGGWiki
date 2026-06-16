@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Arelvam"
-mutant_id: "cf_10"
-permalink: /mutants/arelvam/
+ID: "cf_10"
+permalink: /mutants/Arelvam/
 ---

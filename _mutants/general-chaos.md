@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "General Chaos"
-mutant_id: "ca_03"
-permalink: /mutants/general-chaos/
+ID: "ca_03"
+permalink: /mutants/General-Chaos/
 ---

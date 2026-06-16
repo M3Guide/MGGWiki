@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Jane Saw"
-mutant_id: "cb_09"
-permalink: /mutants/jane-saw/
+ID: "cb_09"
+permalink: /mutants/Jane-Saw/
 ---

@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Supraman X"
-mutant_id: "ae_04"
-permalink: /mutants/supraman-x/
+ID: "ae_04"
+permalink: /mutants/Supraman-X/
 ---

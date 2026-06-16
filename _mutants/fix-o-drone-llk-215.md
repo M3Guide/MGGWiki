@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Fix-o-Drone LLK-215"
-mutant_id: "ea_12"
-permalink: /mutants/fix-o-drone-llk-215/
+ID: "ea_12"
+permalink: /mutants/Fix-o-Drone-LLK-215/
 ---

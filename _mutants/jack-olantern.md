@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Jack O'Lantern"
-mutant_id: "b_03"
-permalink: /mutants/jack-olantern/
+ID: "b_03"
+permalink: /mutants/Jack-OLantern/
 ---

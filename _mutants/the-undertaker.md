@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "The Undertaker"
-mutant_id: "bf_10"
-permalink: /mutants/the-undertaker/
+ID: "bf_10"
+permalink: /mutants/The-Undertaker/
 ---

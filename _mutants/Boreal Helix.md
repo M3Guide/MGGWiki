@@ -1,8 +1,0 @@
----
-layout: mutant
-title: "Boreal Helix"
-ID: "fa_13"
-permalink: /mutants/Boreal_Helix/
-redirect_from:
-  - /mutants/Boreal%20Helix/
----

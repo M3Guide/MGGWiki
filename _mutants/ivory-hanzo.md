@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Ivory Hanzo"
-mutant_id: "fd_03"
-permalink: /mutants/ivory-hanzo/
+ID: "fd_03"
+permalink: /mutants/Ivory-Hanzo/
 ---

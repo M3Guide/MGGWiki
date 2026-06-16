@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Bazzinger"
-mutant_id: "fa_03"
-permalink: /mutants/bazzinger/
+ID: "fa_03"
+permalink: /mutants/Bazzinger/
 ---

@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Leech Lord"
-mutant_id: "bb_01"
-permalink: /mutants/leech-lord/
+ID: "bb_01"
+permalink: /mutants/Leech-Lord/
 ---

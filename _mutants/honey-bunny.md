@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Honey Bunny"
-mutant_id: "cd_01"
-permalink: /mutants/honey-bunny/
+ID: "cd_01"
+permalink: /mutants/Honey-Bunny/
 ---

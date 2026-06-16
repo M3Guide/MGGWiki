@@ -1,16 +1,17 @@
-import csv, requests, os, re, unicodedata, io, argparse
+import csv, os, re, unicodedata, io, argparse, requests
 from io import StringIO
 
 CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQh2Z4QbBx5VxQgAwXOueCe3TKK9abQQ-XWVyf5tCGKg3pIxnjhJO6buOVhOO8pCuzYmwvr5dppYTgn/pub?output=csv"
 OUTPUT_DIR = "_mutants"
 
-def slugify(name: str) -> str:
-    name = re.sub(r"[''']", "", name)     
-    name = re.sub(r"[^a-z0-9]+", "-", name)
+def slugify(name):
+    name = name.strip()
+    name = re.sub(r"[''']", "", name)    
+    name = re.sub(r"[^a-zA-Z0-9]+", "-", name)
     name = name.strip("-")
     return name
 
-def make_front_matter(row: dict) -> str:
+def make_front_matter(row):
     name     = row.get("Name",  "").strip()
     mutant_id = row.get("ID",   "").strip()
     slug     = slugify(name)
@@ -23,7 +24,7 @@ permalink: /mutants/{slug}/
 ---
 """
 
-def fetch_csv(url: str) -> list[dict]:
+def fetch_csv(url):
     print(f"Fetching CSV from Google Sheets")
     response = requests.get(url, timeout=15)
     response.raise_for_status()
@@ -32,7 +33,7 @@ def fetch_csv(url: str) -> list[dict]:
     print(f"{len(rows)} mutants found in sheet.")
     return rows
 
-def get_existing_slugs(output_dir: str) -> set[str]:
+def get_existing_slugs(output_dir):
     if not os.path.isdir(output_dir):
         os.makedirs(output_dir)
         return set()

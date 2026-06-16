@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Drall"
-mutant_id: "cd_08"
-permalink: /mutants/drall/
+ID: "cd_08"
+permalink: /mutants/Drall/
 ---

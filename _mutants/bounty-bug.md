@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Bounty Bug"
-mutant_id: "ec_01"
-permalink: /mutants/bounty-bug/
+ID: "ec_01"
+permalink: /mutants/Bounty-Bug/
 ---

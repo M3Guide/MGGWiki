@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Chantecler"
-mutant_id: "df_08"
-permalink: /mutants/chantecler/
+ID: "df_08"
+permalink: /mutants/Chantecler/
 ---

@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Harebrained Underminer"
-mutant_id: "dc_12"
-permalink: /mutants/harebrained-underminer/
+ID: "dc_12"
+permalink: /mutants/Harebrained-Underminer/
 ---

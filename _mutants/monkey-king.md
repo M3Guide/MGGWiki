@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Monkey King"
-mutant_id: "dc_05"
-permalink: /mutants/monkey-king/
+ID: "dc_05"
+permalink: /mutants/Monkey-King/
 ---

@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Chocolem"
-mutant_id: "df_11"
-permalink: /mutants/chocolem/
+ID: "df_11"
+permalink: /mutants/Chocolem/
 ---

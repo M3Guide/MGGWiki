@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Micky Krueger"
-mutant_id: "bc_03"
-permalink: /mutants/micky-krueger/
+ID: "bc_03"
+permalink: /mutants/Micky-Krueger/
 ---

@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Bushi"
-mutant_id: "cb_02"
-permalink: /mutants/bushi/
+ID: "cb_02"
+permalink: /mutants/Bushi/
 ---

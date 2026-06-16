@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Orbital Nexus"
-mutant_id: "ee_13"
-permalink: /mutants/orbital-nexus/
+ID: "ee_13"
+permalink: /mutants/Orbital-Nexus/
 ---

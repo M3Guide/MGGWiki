@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Paramic"
-mutant_id: "ed_07"
-permalink: /mutants/paramic/
+ID: "ed_07"
+permalink: /mutants/Paramic/
 ---

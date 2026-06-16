@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Singularity Wizard"
-mutant_id: "ef_99"
-permalink: /mutants/singularity-wizard/
+ID: "ef_99"
+permalink: /mutants/Singularity-Wizard/
 ---

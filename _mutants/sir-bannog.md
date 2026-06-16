@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Sir Bannog"
-mutant_id: "cd_11"
-permalink: /mutants/sir-bannog/
+ID: "cd_11"
+permalink: /mutants/Sir-Bannog/
 ---

@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Draco Mage"
-mutant_id: "fd_09"
-permalink: /mutants/draco-mage/
+ID: "fd_09"
+permalink: /mutants/Draco-Mage/
 ---

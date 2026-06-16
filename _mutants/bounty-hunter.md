@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Bounty Hunter"
-mutant_id: "a_05"
-permalink: /mutants/bounty-hunter/
+ID: "a_05"
+permalink: /mutants/Bounty-Hunter/
 ---

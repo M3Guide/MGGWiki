@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Leonidas"
-mutant_id: "cb_04"
-permalink: /mutants/leonidas/
+ID: "cb_04"
+permalink: /mutants/Leonidas/
 ---

@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Cursed Rider"
-mutant_id: "bb_03"
-permalink: /mutants/cursed-rider/
+ID: "bb_03"
+permalink: /mutants/Cursed-Rider/
 ---

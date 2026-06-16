@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Doctor Blaw"
-mutant_id: "ba_05"
-permalink: /mutants/doctor-blaw/
+ID: "ba_05"
+permalink: /mutants/Doctor-Blaw/
 ---

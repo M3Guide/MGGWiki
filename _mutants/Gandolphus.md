@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Gandolphus"
-mutant_id: "fc_01"
-permalink: /mutants/gandolphus/
+ID: "fc_01"
+permalink: /mutants/Gandolphus/
 ---

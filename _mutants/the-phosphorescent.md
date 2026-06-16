@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "The Phosphorescent"
-mutant_id: "bb_13"
-permalink: /mutants/the-phosphorescent/
+ID: "bb_13"
+permalink: /mutants/The-Phosphorescent/
 ---

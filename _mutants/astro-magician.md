@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Astro Magician"
-mutant_id: "fe_03"
-permalink: /mutants/astro-magician/
+ID: "fe_03"
+permalink: /mutants/Astro-Magician/
 ---

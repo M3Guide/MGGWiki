@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Pit Lord"
-mutant_id: "ff_01"
-permalink: /mutants/pit-lord/
+ID: "ff_01"
+permalink: /mutants/Pit-Lord/
 ---

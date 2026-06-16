@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Tengu"
-mutant_id: "bd_99"
-permalink: /mutants/tengu/
+ID: "bd_99"
+permalink: /mutants/Tengu/
 ---

@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Awakened Missy"
-mutant_id: "ca_99"
-permalink: /mutants/awakened-missy/
+ID: "ca_99"
+permalink: /mutants/Awakened-Missy/
 ---

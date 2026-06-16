@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Irreality Animus"
-mutant_id: "ee_99"
-permalink: /mutants/irreality-animus/
+ID: "ee_99"
+permalink: /mutants/Irreality-Animus/
 ---

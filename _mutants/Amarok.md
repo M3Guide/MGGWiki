@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Amarok"
-mutant_id: "fc_07"
-permalink: /mutants/amarok/
+ID: "fc_07"
+permalink: /mutants/Amarok/
 ---

@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Mandor"
-mutant_id: "ef_06"
-permalink: /mutants/mandor/
+ID: "ef_06"
+permalink: /mutants/Mandor/
 ---

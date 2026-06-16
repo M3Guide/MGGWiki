@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "The Screencaster"
-mutant_id: "ab_14"
-permalink: /mutants/the-screencaster/
+ID: "ab_14"
+permalink: /mutants/The-Screencaster/
 ---

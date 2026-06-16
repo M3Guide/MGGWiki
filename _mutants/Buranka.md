@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Buranka"
-mutant_id: "fd_04"
-permalink: /mutants/buranka/
+ID: "fd_04"
+permalink: /mutants/Buranka/
 ---

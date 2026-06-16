@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Lama Sensei"
-mutant_id: "dd_13"
-permalink: /mutants/lama-sensei/
+ID: "dd_13"
+permalink: /mutants/Lama-Sensei/
 ---

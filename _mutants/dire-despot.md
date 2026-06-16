@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Dire Despot"
-mutant_id: "bc_01"
-permalink: /mutants/dire-despot/
+ID: "bc_01"
+permalink: /mutants/Dire-Despot/
 ---

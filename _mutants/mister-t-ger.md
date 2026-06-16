@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Mister T-Ger"
-mutant_id: "dd_09"
-permalink: /mutants/mister-t-ger/
+ID: "dd_09"
+permalink: /mutants/Mister-T-Ger/
 ---

@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Regulo&Juzya"
-mutant_id: "ce_12"
-permalink: /mutants/regulo-juzya/
+ID: "ce_12"
+permalink: /mutants/Regulo-Juzya/
 ---

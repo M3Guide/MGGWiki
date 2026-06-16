@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Generalissimo Chocoleon IV"
-mutant_id: "fc_12"
-permalink: /mutants/generalissimo-chocoleon-iv/
+ID: "fc_12"
+permalink: /mutants/Generalissimo-Chocoleon-IV/
 ---

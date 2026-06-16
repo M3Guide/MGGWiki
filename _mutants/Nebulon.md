@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Nebulon"
-mutant_id: "ef_01"
-permalink: /mutants/nebulon/
+ID: "ef_01"
+permalink: /mutants/Nebulon/
 ---

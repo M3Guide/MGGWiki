@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Martian Marauder"
-mutant_id: "ce_01"
-permalink: /mutants/martian-marauder/
+ID: "ce_01"
+permalink: /mutants/Martian-Marauder/
 ---

@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Wampara"
-mutant_id: "ed_03"
-permalink: /mutants/wampara/
+ID: "ed_03"
+permalink: /mutants/Wampara/
 ---

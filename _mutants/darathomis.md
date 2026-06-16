@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "D'Arathomis"
-mutant_id: "c_13"
-permalink: /mutants/darathomis/
+ID: "c_13"
+permalink: /mutants/DArathomis/
 ---

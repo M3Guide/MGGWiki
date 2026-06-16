@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Ammonia Atlantica"
-mutant_id: "ed_12"
-permalink: /mutants/ammonia-atlantica/
+ID: "ed_12"
+permalink: /mutants/Ammonia-Atlantica/
 ---

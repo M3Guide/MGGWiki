@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Spiraxia"
-mutant_id: "e_14"
-permalink: /mutants/spiraxia/
+ID: "e_14"
+permalink: /mutants/Spiraxia/
 ---

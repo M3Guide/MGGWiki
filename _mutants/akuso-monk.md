@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Akuso Monk"
-mutant_id: "cf_05"
-permalink: /mutants/akuso-monk/
+ID: "cf_05"
+permalink: /mutants/Akuso-Monk/
 ---

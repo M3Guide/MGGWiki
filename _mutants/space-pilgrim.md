@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Space Pilgrim"
-mutant_id: "ea_13"
-permalink: /mutants/space-pilgrim/
+ID: "ea_13"
+permalink: /mutants/Space-Pilgrim/
 ---

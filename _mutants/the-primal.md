@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "The Primal"
-mutant_id: "bd_07"
-permalink: /mutants/the-primal/
+ID: "bd_07"
+permalink: /mutants/The-Primal/
 ---

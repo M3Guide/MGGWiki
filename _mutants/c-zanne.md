@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "CÃ©zanne"
-mutant_id: "dc_04"
-permalink: /mutants/c-zanne/
+ID: "dc_04"
+permalink: /mutants/C-zanne/
 ---

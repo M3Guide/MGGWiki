@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Veren Kaeesu"
-mutant_id: "ec_11"
-permalink: /mutants/veren-kaeesu/
+ID: "ec_11"
+permalink: /mutants/Veren-Kaeesu/
 ---

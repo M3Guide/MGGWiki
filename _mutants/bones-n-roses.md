@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Bones 'n' Roses"
-mutant_id: "fb_05"
-permalink: /mutants/bones-n-roses/
+ID: "fb_05"
+permalink: /mutants/Bones-n-Roses/
 ---

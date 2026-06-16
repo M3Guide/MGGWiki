@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Dimentio"
-mutant_id: "ef_11"
-permalink: /mutants/dimentio/
+ID: "ef_11"
+permalink: /mutants/Dimentio/
 ---

@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Big Bo$$"
-mutant_id: "ca_09"
-permalink: /mutants/big-bo/
+ID: "ca_09"
+permalink: /mutants/Big-Bo/
 ---

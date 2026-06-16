@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Robo Fuerte"
-mutant_id: "ac_07"
-permalink: /mutants/robo-fuerte/
+ID: "ac_07"
+permalink: /mutants/Robo-Fuerte/
 ---

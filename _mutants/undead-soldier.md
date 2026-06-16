@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Undead Soldier"
-mutant_id: "eb_05"
-permalink: /mutants/undead-soldier/
+ID: "eb_05"
+permalink: /mutants/Undead-Soldier/
 ---

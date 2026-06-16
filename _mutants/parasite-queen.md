@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Parasite Queen"
-mutant_id: "de_01"
-permalink: /mutants/parasite-queen/
+ID: "de_01"
+permalink: /mutants/Parasite-Queen/
 ---

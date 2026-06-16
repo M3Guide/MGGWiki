@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Lord Dragon"
-mutant_id: "db_07"
-permalink: /mutants/lord-dragon/
+ID: "db_07"
+permalink: /mutants/Lord-Dragon/
 ---

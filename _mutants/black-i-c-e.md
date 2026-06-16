@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Black I.C.E."
-mutant_id: "af_14"
-permalink: /mutants/black-i-c-e/
+ID: "af_14"
+permalink: /mutants/Black-I-C-E/
 ---

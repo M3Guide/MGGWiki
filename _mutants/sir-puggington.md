@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Sir Puggington"
-mutant_id: "cd_06"
-permalink: /mutants/sir-puggington/
+ID: "cd_06"
+permalink: /mutants/Sir-Puggington/
 ---

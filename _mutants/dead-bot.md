@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Dead Bot"
-mutant_id: "ab_01"
-permalink: /mutants/dead-bot/
+ID: "ab_01"
+permalink: /mutants/Dead-Bot/
 ---

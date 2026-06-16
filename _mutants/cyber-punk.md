@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Cyber Punk"
-mutant_id: "ac_05"
-permalink: /mutants/cyber-punk/
+ID: "ac_05"
+permalink: /mutants/Cyber-Punk/
 ---

@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Mexihcatl"
-mutant_id: "fc_04"
-permalink: /mutants/mexihcatl/
+ID: "fc_04"
+permalink: /mutants/Mexihcatl/
 ---

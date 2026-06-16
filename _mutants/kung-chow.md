@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Kung Chow"
-mutant_id: "fd_06"
-permalink: /mutants/kung-chow/
+ID: "fd_06"
+permalink: /mutants/Kung-Chow/
 ---

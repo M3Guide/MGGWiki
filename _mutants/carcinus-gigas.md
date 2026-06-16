@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Carcinus Gigas"
-mutant_id: "ad_09"
-permalink: /mutants/carcinus-gigas/
+ID: "ad_09"
+permalink: /mutants/Carcinus-Gigas/
 ---

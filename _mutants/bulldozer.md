@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Bulldozer"
-mutant_id: "bd_05"
-permalink: /mutants/bulldozer/
+ID: "bd_05"
+permalink: /mutants/Bulldozer/
 ---

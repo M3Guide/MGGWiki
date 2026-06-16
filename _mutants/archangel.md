@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Archangel"
-mutant_id: "fa_99"
-permalink: /mutants/archangel/
+ID: "fa_99"
+permalink: /mutants/Archangel/
 ---

@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Gakarian"
-mutant_id: "eb_10"
-permalink: /mutants/gakarian/
+ID: "eb_10"
+permalink: /mutants/Gakarian/
 ---

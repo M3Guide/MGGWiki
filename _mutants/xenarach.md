@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Xenarach"
-mutant_id: "ab_03"
-permalink: /mutants/xenarach/
+ID: "ab_03"
+permalink: /mutants/Xenarach/
 ---

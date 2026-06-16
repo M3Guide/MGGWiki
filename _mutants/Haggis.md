@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Haggis"
-mutant_id: "cd_03"
-permalink: /mutants/haggis/
+ID: "cd_03"
+permalink: /mutants/Haggis/
 ---

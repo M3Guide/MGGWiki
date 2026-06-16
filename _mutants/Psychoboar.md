@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Psychoboar"
-mutant_id: "dd_03"
-permalink: /mutants/psychoboar/
+ID: "dd_03"
+permalink: /mutants/Psychoboar/
 ---

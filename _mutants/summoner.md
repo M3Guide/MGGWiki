@@ -1,6 +1,6 @@
 ---
 layout: mutant
 title: "Summoner"
-mutant_id: "f_12"
-permalink: /mutants/summoner/
+ID: "f_12"
+permalink: /mutants/Summoner/
 ---
