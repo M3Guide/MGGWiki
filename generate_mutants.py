@@ -1,15 +1,11 @@
-import csv, os, re, unicodedata, io, argparse, requests
+import csv, os, re, unicodedata, io, argparse, requests, urllib.parse
 from io import StringIO
 
 CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQh2Z4QbBx5VxQgAwXOueCe3TKK9abQQ-XWVyf5tCGKg3pIxnjhJO6buOVhOO8pCuzYmwvr5dppYTgn/pub?output=csv"
 OUTPUT_DIR = "_mutants"
 
 def slugify(name):
-    name = name.strip()
-    name = re.sub(r"[''']", "", name)    
-    name = re.sub(r"[^a-zA-Z0-9]+", "-", name)
-    name = name.strip("-")
-    return name
+    return urllib.parse.quote(name).replace('%20', '_')
 
 def make_front_matter(row):
     name     = row.get("Name",  "").strip()
