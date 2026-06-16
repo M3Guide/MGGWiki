@@ -298,7 +298,7 @@ function renderGrid(mutants) {
         `<img class="mutant-card-gene" src="../images/genes/gene_${geneIcons[g1]}.png" alt="${g1}">`,
         g2 !== "Neutral" ? `<img class="mutant-card-gene" src="../images/genes/gene_${geneIcons[g2]}.png" alt="${g2}">` : ""
       ].join("");
-       `<a class="mutant-card" href="../mutants/${encodeURIComponent(name).replaceAll("%20", "_")}/">
+      return `<a class="mutant-card" href="../mutants/${encodeURIComponent(name).replaceAll("%20", "_")}/">
         <div class="mutant-card-img-wrap">
           <img class="mutant-card-bg" src="../images/icon_bg.png" alt="">
           <img class="mutant-card-img" src="${iconSrc}" alt="${name}" loading="lazy"
