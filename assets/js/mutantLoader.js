@@ -16,9 +16,6 @@ var mutantData;
 var mutantBingo;
 var mutantBingoGrids = {};
 var upgraded = false;
-
-// ─── Rich Text: Hardcoded term maps ──────────────────────────────────────────
-
 const GENE_MAP = {
   "Cyber":     { url: "/genes/cyber/",     icon: "../../images/genes/gene_a.png" },
   "Necro":     { url: "/genes/necro/",     icon: "../../images/genes/gene_b.png" },
@@ -60,13 +57,6 @@ const SUPPLIES_MAP = {
   "Gold version":     { url: "/supplies/goldstar/",    icon: "../../images/supplies/goldstar.png" },
   "Platinum version": { url: "/supplies/platinumstar/",    icon: "../../images/supplies/platinumstar.png" }
 };
-/**
- * Builds an inline rich-text link with an optional small icon.
- * @param {string} label   - display text
- * @param {string} url     - href
- * @param {string|null} icon  - image src, or null for no icon
- * @param {string} iconClass  - CSS class for the icon
- */
 function makeLink(label, url, icon, iconClass) {
   const img = icon
     ? `<img src="${icon}" alt="" class="${iconClass}" aria-hidden="true">`
@@ -74,40 +64,20 @@ function makeLink(label, url, icon, iconClass) {
   return `<a href="${url}" class="rich-link">${img}${label}</a>`;
 }
 
-/**
- * Escapes a string for use in a RegExp.
- */
 function escapeRegex(str) {
   return str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
-/**
- * Converts plain text into HTML with auto-linked genes, categories, abilities,
- * and mutant names (drawn from the live CSV data array).
- *
- * Terms are matched as whole words, case-sensitively, longest-first to avoid
- * partial matches (e.g. "Video Game" before "Game").
- *
- * @param {string} text        - raw text from CSV cell
- * @param {Object[]} allMutants - full parsed CSV rows (for mutant name lookup)
- * @returns {string} HTML string safe to set as innerHTML
- */
 function richText(text, allMutants) {
   if (!text) return "";
-
-  // Escape HTML entities first so we don't inject from CSV values
   const safe = text
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;");
-
-  // Build unified term list: { term, url, icon, iconClass }
   const terms = [];
-
   Object.entries(GENE_MAP).forEach(([name, cfg]) => {
     terms.push({ term: name, url: cfg.url, icon: cfg.icon, iconClass: "rich-icon rich-icon--gene" });
   });
-
   Object.entries(CATEGORY_MAP).forEach(([name, cfg]) => {
     terms.push({ term: name, url: cfg.url, icon: cfg.icon, iconClass: "rich-icon rich-icon--category" });
   });
@@ -130,11 +100,10 @@ function richText(text, allMutants) {
     });
   }
 
-  // Sort longest first to prevent partial-match clobbering
+  // Sort longest first to prevent partial-match
   terms.sort((a, b) => b.term.length - a.term.length);
 
-  // Use a placeholder strategy: replace matches with unique tokens, then swap in HTML
-  // This prevents double-processing of already-replaced segments.
+  // Use a placeholder strategy. Replace matches with unique tokens, then swap in HTML
   const placeholders = [];
   let result = safe;
 
@@ -159,9 +128,6 @@ function richText(text, allMutants) {
 
   return result;
 }
-
-// ─── CSV Parsing ──────────────────────────────────────────────────────────────
-
 function parseCSV(csvText) {
   const rows = [];
   let currentRow = [];
@@ -198,9 +164,6 @@ function parseCSV(csvText) {
 
   return rows;
 }
-
-// ─── Helpers ──────────────────────────────────────────────────────────────────
-
 function convertTime(s){
   var ans = "";
   var m = [1440,60,1];
@@ -226,9 +189,6 @@ function isSpread(atkSlot, upgraded, atkTypeMinus, atkTypePlus){
   }
   return false;
 }
-
-// ─── DOM Population ───────────────────────────────────────────────────────────
-
 function applyArrows(){
   const skinSelectorDiv = document.getElementById("mutant-skin-selector");
   const leftArrow = document.getElementById("skin-left");
@@ -416,8 +376,6 @@ function applyBulletWrap(text, allMutants, bulletClass) {
     .join("");
 }
 
-// ─── CSV Loaders ──────────────────────────────────────────────────────────────
-
 async function loadCSV(csvUrl) {
   try {
     const response = await fetch(csvUrl);
@@ -442,8 +400,6 @@ async function loadMutantData(csvUrl) {
     if (!m) throw new Error("Mutant not found in CSV.");
     mutantData = m;
 
-    // ── Rich-text fields (Overview, How to Obtain, References) ──────────────
-    // These are rendered as innerHTML with auto-linked terms and inline icons.
     const overviewEl  = document.getElementById("mutant-overview");
     const obtainEl    = document.getElementById("mutant-obtain");
     const referencesEl = document.getElementById("mutant-references");
@@ -451,17 +407,13 @@ async function loadMutantData(csvUrl) {
     if (overviewEl)    overviewEl.innerHTML   = richText(m["Overview"], data);
     if (obtainEl)      obtainEl.innerHTML     = applyBulletWrap(m["How to Obtain"], data, "obtain-bullet");
     if (referencesEl)  referencesEl.innerHTML = applyBulletWrap(m["References"], data, "ref-bullet");
-
-    // ── Plain text fields ────────────────────────────────────────────────────
     document.getElementById("mutant-name").textContent     = m["Name"];
     document.getElementById("mutant-name-box").textContent = m["Name"];
     document.getElementById("mutant-breedable").textContent = m["Breedable?"];
     document.getElementById("mutant-bingo").textContent    = m["Bingo"];
-
     // Biography (preserves line breaks, no rich-text linking)
     document.getElementById("mutant-biography").innerHTML =
       `<div style="white-space: pre-wrap;">${m["Biography"] || ""}</div>`;
-
     // Infobox fields (icons applied by applyGenes / applyIcons)
     const g1 = (m["Gene 1"] || "").trim();
     const g2 = (m["Gene 2"] || "").trim();
@@ -506,9 +458,6 @@ async function loadMutantBingo(csvUrl) {
   }
   mutantBingo = bingo;
 }
-
-// ─── Entry Points ─────────────────────────────────────────────────────────────
-
 const mutantDataCSV  = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQh2Z4QbBx5VxQgAwXOueCe3TKK9abQQ-XWVyf5tCGKg3pIxnjhJO6buOVhOO8pCuzYmwvr5dppYTgn/pub?output=csv";
 const mutantBingoCSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRbbkoFz27LRxBx3VTOdOBbPqHKm6iAbxeuq3XVrm7XDLWDrO9TgPb9BTuobtL_SnDLkQIEbFy9AXMj/pub?output=csv";
 
