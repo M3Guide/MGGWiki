@@ -7,7 +7,9 @@ on:
   schedule:
     - cron: '0 6 * * *'
   workflow_dispatch:
-
+concurrency:
+  group: mutant-pages-${{ github.ref }}
+  cancel-in-progress: false
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -42,6 +44,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add _mutants/
           git diff --cached --quiet || git commit -m "chore: auto-generate new mutant pages [skip ci]"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
           git push
 
       # 6. Set up Ruby for Jekyll
