@@ -1,0 +1,164 @@
+---
+permalink: /404.html
+layout: none
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Page Not Found | MGGWiki</title>
+  <link rel="icon" href="/MGGWiki/favicon.ico" type="image/ico">
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/MGGWiki/assets/css/navbar.css">
+  <script src="/MGGWiki/assets/js/navbar.js" defer></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Oxanium', sans-serif;
+      color: #eee;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background:
+        linear-gradient(rgba(18,18,20,0.92), rgba(18,18,20,0.92)),
+        url('https://s-ak.kobojo.com/mutants/assets/mobile/maps/bkg0.webp') center/cover fixed;
+    }
+
+    header { flex-shrink: 0; }
+
+    .page-404 {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 24px;
+      gap: 48px;
+    }
+
+    /* Character image */
+    .char-wrap {
+      flex-shrink: 0;
+      width: 220px;
+      position: relative;
+    }
+    .char-wrap img {
+      width: 100%;
+      object-fit: contain;
+    }
+
+    /* Text side */
+    .text-side {
+      max-width: 460px;
+    }
+    .error-code {
+      font-size: 6rem;
+      font-weight: 700;
+      line-height: 1;
+      color: #b0ea20;
+      letter-spacing: -0.02em;
+      margin-bottom: 6px;
+    }
+    .error-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #555;
+      margin-bottom: 20px;
+    }
+    .error-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #eee;
+      margin-bottom: 12px;
+    }
+    .error-body {
+      font-size: 0.88rem;
+      color: #888;
+      line-height: 1.8;
+      margin-bottom: 28px;
+    }
+    .error-body strong { color: #aaa; }
+
+    .btn-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .btn-primary {
+      display: inline-block;
+      padding: 9px 20px;
+      background: #b0ea20;
+      color: #111;
+      font-family: 'Oxanium', sans-serif;
+      font-weight: 700;
+      font-size: 0.82rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .btn-primary:hover { background: #c8f53a; text-decoration: none; }
+
+    .btn-secondary {
+      display: inline-block;
+      padding: 9px 20px;
+      background: transparent;
+      color: #aaa;
+      font-family: 'Oxanium', sans-serif;
+      font-size: 0.82rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 1px solid #333;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .btn-secondary:hover { border-color: #b0ea20; color: #eee; text-decoration: none; }
+
+    .divider {
+      width: 40px;
+      height: 2px;
+      background: #b0ea20;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 640px) {
+      .page-404 { flex-direction: column; text-align: center; gap: 28px; }
+      .char-wrap { width: 150px; }
+      .btn-row { justify-content: center; }
+      .error-code { font-size: 4.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <header id="navbar-container"></header>
+
+  <div class="page-404">
+    <div class="char-wrap">
+      <img src="/MGGWiki/images/characters/darwin_terminator.png" alt="Reed is blocking you! ">
+    </div>
+
+    <div class="text-side">
+      <div class="error-code">404</div>
+      <div class="error-label">Page not found</div>
+      <div class="divider"></div>
+      <p class="error-title">This page doesn't exist, or doesn't exist <em>yet</em>.</p>
+      <p class="error-body">
+        The page you're looking for isn't here. It may have been moved, deleted,
+        or is still waiting to be created.<br><br>
+        <strong>Think there should be a page here?</strong>
+        Reach out to the wiki staff and let us know.
+      </p>
+      <div class="btn-row">
+        <a class="btn-primary" href="/MGGWiki/">Go Home</a>
+        <a class="btn-secondary" href="/MGGWiki/mutants-index/">Mutopedia</a>
+        <a class="btn-secondary" href="mailto:mutantsggguide@gmail.com">Contact Staff</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

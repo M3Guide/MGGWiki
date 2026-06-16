@@ -1,0 +1,66 @@
+name: Generate Mutants & Deploy
+on:
+  push:
+    branches: [ main ]
+  # Run on a schedule to pick up new sheet rows automatically
+  # This runs every day at 06:00 UTC
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      # 1. Check out the repo
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # 2. Set up Python
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # 3. Install Python dependencies
+      - name: Install Python dependencies
+        run: pip install requests
+
+      # 4. Run the generator — only creates files that don't exist yet
+      - name: Generate missing mutant .md files
+        run: python generate_mutants.py
+
+      # 5. Commit and push any new .md files back to the repo
+      - name: Commit new mutant files
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add _mutants/
+          git diff --cached --quiet || git commit -m "chore: auto-generate new mutant pages [skip ci]"
+          git push
+
+      # 6. Set up Ruby for Jekyll
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+
+      # 7. Build the Jekyll site
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+
+      # 8. Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          publish_branch: gh-pages

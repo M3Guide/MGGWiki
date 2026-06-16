@@ -1,0 +1,8 @@
+---
+layout: mutant
+title: "The Phosphorescent"
+ID: "bb_13"
+permalink: /mutants/The_Phosphorescent/
+redirect_from:
+  - /mutants/The%20Phosphorescent/
+---

@@ -1,0 +1,417 @@
+<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="../../favicon.ico" type="image/ico">
+<link rel="stylesheet" href="{{ '/assets/css/navbar.css' | relative_url }}">
+<script src="{{ '/assets/js/navbar.js' | relative_url }}" defer></script>
+<link rel="stylesheet" href="{{ '/assets/css/wiki.css' | relative_url }}">
+
+<header id="navbar-container"></header>
+<style>
+  * { box-sizing: border-box; }
+
+  body {
+    font-family: 'Oxanium', sans-serif;
+  }
+
+  .index-page {
+    max-width: 1300px;
+    margin: 36px auto;
+    padding: 0 24px;
+  }
+
+  /* ── Page header ── */
+  .index-heading {
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #b0ea20;
+    margin: 0 0 4px;
+  }
+  .index-subheading {
+    font-size: 0.78rem;
+    color: white;
+    margin: 0 0 20px;
+    letter-spacing: 0.06em;
+  }
+
+  /* ── Search ── */
+  .search-wrap {
+    position: relative;
+    margin-bottom: 18px;
+  }
+  .search-wrap svg {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.4;
+    pointer-events: none;
+  }
+  #mutant-search {
+    width: 100%;
+    padding: 9px 14px 9px 38px;
+    font-family: 'Oxanium', sans-serif;
+    font-size: 0.9rem;
+    background: #1c1c20;
+    border: 1px solid #333;
+    border-bottom: 2px solid #b0ea20;
+    color: #eee;
+    border-radius: 0;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  #mutant-search:focus { border-color: #b0ea20; }
+  #mutant-search::placeholder { color: #444; }
+
+  /* ── Filter bar ── */
+  .filter-bar {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 8px;
+      background: #0f0f12;
+      border: 1px solid #222;
+      border-left: 3px solid #b0ea20;
+      padding: 12px 14px;
+      border-radius: 2px;
+  }
+  .filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+  }
+  .filter-group-label {
+    color: #aaa;
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    width: 80px;
+    flex-shrink: 0;
+    margin-left: 10px;
+  }
+  .filter-btn {
+    background: transparent;
+    border: 1px solid #3a3a42;
+    color: #ccc;
+    padding: 4px 11px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-family: 'Oxanium', sans-serif;
+    font-size: 0.82rem;
+    letter-spacing: 0.04em;
+    transition: all 0.12s;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .filter-btn img {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+    vertical-align: middle;
+  }
+  .filter-btn:hover { border-color: #b0ea20; color: #ccc; }
+  .filter-btn.active {
+    border-color: #b0ea20;
+    color: #b0ea20;
+    background: rgba(176,234,32,0.06);
+  }
+
+  /* ── Count + sort bar ── */
+  .grid-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #222;
+    padding-bottom: 8px;
+  }
+  #mutant-count {
+    color: #ccc;;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+  }
+
+  /* ── Grid ── */
+  .mutants-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    gap: 10px;
+  }
+
+  .mutant-card {
+    background: #18181c;
+    border: 1px solid #242428;
+    border-radius: 3px;
+    overflow: visible;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.15s, background 0.15s;
+    text-decoration: none;
+    display: block;
+    color: inherit;
+  }
+  .mutant-card:hover {
+    border-color: #b0ea20;
+    background: #1e201a;
+    text-decoration: none;
+  }
+
+  /* icon wrapper — placeholder bg lives here */
+  .mutant-card-img-wrap {
+    width: 100%;
+    aspect-ratio: 1;
+    background: #111113;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: clip;
+    overflow-clip-margin: 10px;
+    position: relative;
+  }
+  .mutant-card-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+  .mutant-card-img {
+    width: 96.7%;
+    height: 97.1%;
+    object-fit: contain;
+    position: relative;
+    z-index: 1;
+  }
+  .mutant-card-genes {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0px;
+    z-index: 2;
+  }
+  .mutant-card-gene {
+    width: 26px;
+    height: 33px;
+    object-fit: contain;
+    filter: drop-shadow(0 1px 2px rgba(0,0,0,0.8));
+  }
+
+  .mutant-card-name {
+    padding: 5px 6px 6px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #bbb;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    letter-spacing: 0.03em;
+    border-top: 1px solid #242428;
+  }
+  .mutant-card:hover .mutant-card-name { color: #eee; }
+
+  .no-results {
+    color: #444;
+    text-align: center;
+    padding: 60px;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    grid-column: 1/-1;
+  }
+
+  @media (max-width: 600px) {
+    .mutants-grid { grid-template-columns: repeat(auto-fill, minmax(85px, 1fr)); gap: 7px; }
+    .filter-group-label { width: 56px; }
+  }
+</style>
+
+<div class="index-page">
+  <p class="index-heading"></p>
+  <div class="search-wrap">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#eee" stroke-width="2">
+      <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+    </svg>
+    <input type="text" id="mutant-search" placeholder="Search mutants...">
+  </div>
+
+  <div class="filter-bar" id="filter-bar">Loading filters...</div>
+  <div class="grid-header"><span></span></div>
+  <p class="index-subheading"><span id="mutant-count"></span></p>
+  <div class="mutants-grid" id="mutants-grid">
+    <p class="no-results">Loading...</p>
+  </div>
+
+
+</div>
+
+<script defer>
+const CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQh2Z4QbBx5VxQgAwXOueCe3TKK9abQQ-XWVyf5tCGKg3pIxnjhJO6buOVhOO8pCuzYmwvr5dppYTgn/pub?output=csv";
+
+const geneIcons = { Cyber:"a", Necro:"b", Saber:"c", Zoomorph:"d", Galactic:"e", Mythic:"f", Neutral:"all" };
+const geneList  = ["Cyber","Necro","Saber","Zoomorph","Galactic","Mythic"];
+const abilityList  = ["Shield","Drain","Retaliate","Wound","Boost","Curse"];
+const categoryList = ["Common","Legendary","Exclusive","Reactor","PvP","Secret","Heroic","Seasonal","Zodiac","Video Game"];
+const breedableList = ["Yes","No","If owned"];
+
+// Each filter group allows only one active value at a time.
+// activeFilters: { groupKey: value | null }
+const activeFilters = { gene1: null, gene2: null, category: null, ability: null, breedable: null };
+
+function parseCSV(text) {
+  const rows = []; let cur = [], field = "", inQ = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i], n = text[i+1];
+    if (c==='"' && inQ && n==='"') { field+='"'; i++; }
+    else if (c==='"') { inQ=!inQ; }
+    else if (c===',' && !inQ) { cur.push(field); field=""; }
+    else if ((c==='\n'||c==='\r') && !inQ) {
+      if (field.length||cur.length) { cur.push(field); rows.push(cur); cur=[]; field=""; }
+    } else field+=c;
+  }
+  if (field.length||cur.length) { cur.push(field); rows.push(cur); }
+  return rows;
+}
+
+let allMutants = [];
+
+function renderGrid(mutants) {
+  const grid  = document.getElementById("mutants-grid");
+  const count = document.getElementById("mutant-count");
+  count.textContent = `Showing ${mutants.length} mutant${mutants.length !== 1 ? "s" : ""}`;
+  if (!mutants.length) {
+    grid.innerHTML = '<p class="no-results">No mutants match your filters.</p>';
+    count.textContent = `No mutants match your filters.`;
+    return;
+  }
+  grid.innerHTML = mutants.map(m => {
+      const id   = (m["ID"]   || "").trim();
+      const name = (m["Name"] || "").trim();
+      const g1   = (m["Gene 1"] || "").trim();
+      const g2   = (m["Gene 2"] || "").trim();
+      const iconSrc = `https://raw.githubusercontent.com/M3Guide/MGGImages/refs/heads/main/icons/${g1}/${id}.png`;
+      const geneBadge = [
+        `<img class="mutant-card-gene" src="../images/genes/gene_${geneIcons[g1]}.png" alt="${g1}">`,
+        g2 !== "Neutral" ? `<img class="mutant-card-gene" src="../images/genes/gene_${geneIcons[g2]}.png" alt="${g2}">` : ""
+      ].join("");
+      return `<a class="mutant-card" href="../mutants/${m["Links"]}/">
+        <div class="mutant-card-img-wrap">
+          <img class="mutant-card-bg" src="../images/icon_bg.png" alt="">
+          <img class="mutant-card-img" src="${iconSrc}" alt="${name}" loading="lazy"
+               onerror="this.src='../images/placeholder.png'">
+          <div class="mutant-card-genes">${geneBadge}</div>
+        </div>
+        <div class="mutant-card-name">${name}</div>
+      </a>`;
+    }).join("");
+}
+
+function applyAll() {
+  const search = document.getElementById("mutant-search").value.trim().toLowerCase();
+  const filtered = allMutants.filter(m => {
+    if (search && !(m["Name"]||"").toLowerCase().includes(search)) return false
+    const g1   = (m["Gene 1"]    || "").trim();
+    const g2   = (m["Gene 2"]    || "").trim();
+    const cat  = (m["Category"]  || "").trim();
+    const abil = (m["Ability"]   || "").trim();
+    const breed = (m["Breedable?"] || "").trim();
+
+    if (activeFilters.gene1     && g1   !== activeFilters.gene1)    return false;
+    if (activeFilters.gene2) {
+      const f2 = activeFilters.gene2 === "No gene" ? "Neutral" : activeFilters.gene2;
+      if (g2 !== f2) return false;
+    }
+    if (activeFilters.category  && cat  !== activeFilters.category)  return false;
+    if (activeFilters.ability   && abil !== activeFilters.ability)   return false;
+    if (activeFilters.breedable && breed !== activeFilters.breedable) return false;
+
+    return true;
+  });
+  renderGrid(filtered);
+}
+
+function buildFilters() {
+  const bar = document.getElementById("filter-bar");
+
+  const groups = [
+    {
+      key: "gene1", label: "Gene 1",
+      values: geneList,
+      icon: g => `../images/genes/gene_${geneIcons[g]}.png`
+    },
+    {
+      key: "gene2", label: "Gene 2",
+      values: [...geneList, "No gene"],
+      icon: g => g === "No gene"
+        ? null
+        : `../images/genes/gene_${geneIcons[g]}.png`
+    },
+    {
+      key: "category", label: "Category",
+      values: categoryList,
+      icon: c => `../images/category/${c === "Video Game" ? "Video_Game" : c}.png`
+    },
+    {
+      key: "ability", label: "Ability",
+      values: abilityList,
+      icon: a => `../images/ability/${a}.png`
+    },
+    {
+      key: "breedable", label: "Breedable",
+      values: breedableList,
+      icon: null
+    }
+  ];
+
+  bar.innerHTML = groups.map(g => {
+    const btns = g.values.map(v => {
+      const iconHtml = (g.icon && g.icon(v)) ? `<img src="${g.icon(v)}" alt="">` : "";
+      return `<button class="filter-btn" data-group="${g.key}" data-filter="${v}">${iconHtml}${v}</button>`;
+    }).join("");
+    return `<div class="filter-group">
+      <span class="filter-group-label">${g.label}:</span>${btns}
+    </div>`;
+  }).join("");
+
+  bar.querySelectorAll(".filter-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const group = btn.dataset.group;
+      const val   = btn.dataset.filter;
+
+      // Deactivate all buttons in this group
+      bar.querySelectorAll(`.filter-btn[data-group="${group}"]`)
+         .forEach(b => b.classList.remove("active"));
+
+      if (activeFilters[group] === val) {
+        // Clicking the already-active button deselects it
+        activeFilters[group] = null;
+      } else {
+        activeFilters[group] = val;
+        btn.classList.add("active");
+      }
+      applyAll();
+    });
+  });
+}
+
+document.addEventListener("DOMContentLoaded", async () => {
+  document.getElementById("mutant-search").addEventListener("input", applyAll);
+  try {
+    const res  = await fetch(CSV_URL);
+    const text = await res.text();
+    const rows = parseCSV(text.trim());
+    const headers = rows[0].map(h => h.trim());
+    allMutants = rows.slice(1)
+      .map(r => Object.fromEntries(headers.map((h, i) => [h, (r[i] || "").trim()])))
+      .filter(m => m["Name"]);
+    buildFilters();
+    renderGrid(allMutants);
+  } catch(e) {
+    document.getElementById("mutants-grid").innerHTML = '<p class="no-results">Failed to load data.</p>';
+  }
+});
+</script>

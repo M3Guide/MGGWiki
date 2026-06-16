@@ -1,0 +1,29 @@
+title: "MGGWiki - Mutants: Genetic Gladiators Wiki"
+email: mutantsggguide@gmail.com
+description: >-
+  Mutants: Genetic Gladiators Wiki - See mutant info, stats, and more!
+baseurl: "/MGGWiki"
+url: "https://m3guide.github.io"
+discord_username: RafXCy
+github_username: M3Guide
+permalink: pretty
+theme: minima
+markdown: kramdown
+
+collections:
+  mutants:
+    output: true
+    permalink: /mutants/:name/
+  wikistaff:
+    output: true
+    permalink: /wikistaff/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "wikistaff"
+    values:
+      layout: "wikistaff"
+
+plugins:
+  - jekyll-redirect-from

@@ -1,0 +1,68 @@
+body {
+  background-color: #1a1a1d;
+  color: #fff;
+  font-family: 'Oxanium', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.mutant-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+}
+
+.mutant-card {
+  background-color: #2a2a2f;
+  border: 2px solid #b0ea20;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(176, 234, 32, 0.2);
+  padding: 25px;
+  width: 100%;
+  max-width: 850px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.mutant-card:hover {
+  box-shadow: 0 0 40px rgba(176, 234, 32, 0.4);
+}
+
+.mutant-header img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.mutant-header h1 {
+  margin-top: 10px;
+  font-size: 2rem;
+  color: #b0ea20;
+}
+
+.mutant-genes img {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  filter: drop-shadow(0 0 6px #b0ea20);
+}
+
+.mutant-stats {
+  background: #222;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 25px;
+  font-size: 1.1rem;
+  border: 1px solid #444;
+}
+
+.mutant-description {
+  margin-top: 25px;
+  background: #252530;
+  border-radius: 8px;
+  padding: 15px;
+  border: 1px solid #333;
+  font-size: 1rem;
+  line-height: 1.6;
+}
