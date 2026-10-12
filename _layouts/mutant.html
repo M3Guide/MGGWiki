@@ -18,6 +18,11 @@
     const mutantName = "{{ page.title }}";
   </script>
   <script src="{{ '/assets/js/mutantLoader.js' | relative_url }}" defer></script>
+
+  <script>
+  window.MUTANT_ANIM = { base: "{{ '/assets/anim' | relative_url }}" };
+  </script>
+  <script src="{{ '/assets/js/mutantAnimation.js' | relative_url }}" defer></script>
 </head>
 <body>
   <header id="navbar-container"></header>
