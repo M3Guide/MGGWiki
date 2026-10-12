@@ -57,6 +57,28 @@ const SUPPLIES_MAP = {
   "Gold version":     { url: "/supplies/goldstar/",    icon: "../../images/supplies/goldstar.png" },
   "Platinum version": { url: "/supplies/platinumstar/",    icon: "../../images/supplies/platinumstar.png" }
 };
+var mutantAnim = null, animToken = 0;
+
+async function applyAnimation(m){
+  if (!window.MutantAnim) return;
+  try {
+    mutantAnim = await MutantAnim.create(document.getElementById("mutant-image-container"), m["ID"]);
+  } catch (err) { console.warn("Animation unavailable:", err); return; }
+  if (mutantAnim) document.getElementById("mutant-image").style.visibility = "hidden";
+}
+
+function showSkinAnimation(version){
+  if (!mutantAnim) return;
+  const img = document.getElementById("mutant-image");
+  const token = ++animToken;
+  const useStatic = () => { mutantAnim.show(false); img.style.visibility = "visible"; };
+  if (!mutantAnim.hasSkin(version)) return useStatic();
+  mutantAnim.setSkin(version).then(ok => {
+    if (token !== animToken) return;
+    if (!ok) return useStatic();
+    mutantAnim.show(true); img.style.visibility = "hidden";
+  });
+}
 function makeLink(label, url, icon, iconClass) {
   const img = icon
     ? `<img src="${icon}" alt="" class="${iconClass}" aria-hidden="true">`
@@ -307,6 +329,7 @@ function applyIcons(m, g1, g2){
                        "olympics","chess"];
       if(isReactor.includes(version)) currBg = "Reactor";
       bgImage.style.backgroundImage = `url(${preloadedBackgrounds[currBg]?.src || categoryImage + currBg + "_BG.png"})`;
+    showSkinAnimation(version);
     };
     if (i === 0) {
       btn.classList.add("active");
@@ -419,6 +442,7 @@ async function loadMutantData(csvUrl) {
     const g2 = (m["Gene 2"] || "").trim();
     applyGenes(m, g1, g2);
     applyIcons(m, g1, g2);
+    applyAnimation(m);
     applyStats();
     applyArrows();
   } catch (err) {
